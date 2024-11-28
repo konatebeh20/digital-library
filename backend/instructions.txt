@@ -1,0 +1,67 @@
+python3 -m venv venv
+
+
+
+Activer l'environnement virtuel sur Windows ou sur Linux/MacOS
+
+venv\Scripts\activate  # Sur Windows
+source venv/bin/activate  # Sur Linux/Mac
+
+
+
+cat requirements.txt | xargs -n 1 pip install
+cat requirements.txt | xargs -n 1 pip3 install
+
+pip install -r requirements.txt
+pip3 install -r requirements.txt
+
+
+
+
+
+pip install --user -r requirements.txt
+pip3 install --user -r requirements.txt
+
+
+
+Exporter les dépendances Pour enregistrer les dépendances installées dans un fichier requirements.txt :
+Générer ou mettre à jour le fichier :
+
+pip freeze > requirements.txt
+pip3 freeze > requirements.txt
+
+
+
+python app.py
+python3 app.py
+
+
+
+Ajouter l'environnement virtuel et fichiers inutiles à .gitignore
+
+    # Environnement virtuel
+        venv/
+        __pycache__/
+        *.pyc
+        *.pyo
+        *.pyd
+
+        # Fichiers de build/packaging
+        *.egg-info
+        dist/
+        build/
+        *.egg
+        *.whl
+        *.dist-info
+        *.tar.gz
+        *.zip
+
+
+
+
+
+
+
+
+
+
